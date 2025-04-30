@@ -49,7 +49,7 @@ export default function Home() {
       </header>
 
       {/* Main Content */}
-      <main className="flex-1 container mx-auto px-4 py-6 md:py-8 flex flex-col justify-center">
+      <main className="flex-1 container mx-auto px-4 py-6 md:py-8 flex flex-col justify-center sm:px-6 lg:px-8 w-full">
         <div className="max-w-5xl mx-auto">
           {/* Radio display panel 
           <div className="bg-[#050a0f] border border-green-900/60 rounded-lg p-4 mb-6 shadow-lg shadow-green-900/10">
