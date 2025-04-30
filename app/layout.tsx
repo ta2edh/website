@@ -7,7 +7,7 @@ import { Toaster } from "@/components/ui/toaster"
 const mono = JetBrains_Mono({ subsets: ["latin"] })
 
 export const metadata = {
-  title: "Erdem Hacisalihoglu (TA2EDH)"
+  title: "Erdem Hacisalihoglu (TA2EDH)",
   description: "Erdem Hacisalihoglu's personal website. erdem@ta2edh.com"
 }
 
