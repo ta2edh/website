@@ -87,7 +87,7 @@ export default function Home() {
                 >
                   <FontAwesomeIcon icon={faEnvelope} /> QSO REQUEST
                 </Button>
-                <Button variant="outline" className="border-green-800 hover:bg-green-900/50 text-green-400 font-mono">
+                <Button onClick={() => window.location.href="https://github.com/ta2edh"}variant="outline" className="border-green-800 hover:bg-green-900/50 text-green-400 font-mono">
                 <FontAwesomeIcon icon={faCodeBranch} /> PROJECTS
                 </Button>
               </div>
