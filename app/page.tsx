@@ -50,15 +50,15 @@ export default function Home() {
 
       {/* Main Content */}
       <main className="flex-1 container mx-auto px-4 py-6 md:py-8 flex flex-col justify-center sm:px-6 lg:px-8 w-full">
-        <div className="max-w-5xl mx-auto">
+        <div className="max-w-5xl mx-auto w-full">
           {/* Radio display panel 
           <div className="bg-[#050a0f] border border-green-900/60 rounded-lg p-4 mb-6 shadow-lg shadow-green-900/10">
             <FrequencyDisplay frequency={frequency} />
           </div>*/}
 
-          <div className="grid gap-6 md:grid-cols-2">
+          <div className="grid gap-6 md:grid-cols-2 w-full">
             {/* Left Column - Intro */}
-            <div className="bg-[#050a0f] border border-green-900/60 rounded-lg p-6 space-y-5 shadow-lg shadow-green-900/10">
+            <div className="bg-[#050a0f] border border-green-900/60 rounded-lg p-6 space-y-5 shadow-lg shadow-green-900/10 w-full sm:px-6 lg:px-8">
               <div className="flex items-center gap-3 mb-4">
                 <div className="h-3 w-3 rounded-full bg-green-500 animate-pulse"></div>
                 <h2 className="font-mono text-lg font-bold uppercase tracking-wider">Operator Info</h2>
@@ -103,7 +103,7 @@ export default function Home() {
             </div>
 
             {/* Right Column - Social Links */}
-            <div className="bg-[#050a0f] border border-green-900/60 rounded-lg p-6 shadow-lg shadow-green-900/10">
+            <div className="bg-[#050a0f] border border-green-900/60 rounded-lg p-6 shadow-lg shadow-green-900/10 w-full sm:px-6 lg:px-8">
               <div className="flex items-center gap-3 mb-4">
                 <div className="h-3 w-3 rounded-full bg-green-500 animate-pulse"></div>
                 <h2 className="font-mono text-lg font-bold uppercase tracking-wider">Networks</h2>
