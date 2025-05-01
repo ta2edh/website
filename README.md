@@ -9,6 +9,7 @@ A modern, responsive personal website built with Next.js, React, and Tailwind CS
 - 🎨 Modern and clean design
 - 📱 Fully responsive layout
 - 🌙 Dark/Light mode support
+- 📊 Real-time signal meter visualization
 - 📝 Contact form with validation
 - 🔗 Social media integration
 - ⚡ Fast performance with Next.js
@@ -25,8 +26,8 @@ A modern, responsive personal website built with Next.js, React, and Tailwind CS
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/ta2edh/website
-   cd website
+   git clone https://github.com/yourusername/ta2edh.com.git
+   cd ta2edh.com
    ```
 
 2. Install dependencies:
@@ -86,4 +87,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 Erdem Hacisalihoglu - [@ta2edh](https://twitter.com/ta2edh)
 
-Project Link: [https://github.com/ta2edh/website](https://github.com/ta2edh/website) 
+Project Link: [https://github.com/ta2edh/ta2edh.com](https://github.com/ta2edh/ta2edh.com) 

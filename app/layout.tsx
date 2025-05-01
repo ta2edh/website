@@ -3,7 +3,6 @@ import "@/app/globals.css"
 import { JetBrains_Mono } from "next/font/google"
 import { ThemeProvider } from "@/components/theme-provider"
 import { Toaster } from "@/components/ui/toaster"
-import { Header } from "@/components/header"
 
 const mono = JetBrains_Mono({ subsets: ["latin"] })
 
@@ -21,10 +20,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body className={mono.className}>
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false}>
-          <Header />
-          <main className="min-h-screen pt-16">
-            {children}
-          </main>
+          {children}
           <Toaster />
         </ThemeProvider>
       </body>
