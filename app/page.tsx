@@ -117,9 +117,21 @@ export default function Home() {
       {/* Footer */}
       <footer className="py-3 border-t border-green-900/40 bg-[#050a0f]">
         <div className="container mx-auto px-4 text-center text-xs text-green-500/60 font-mono">
-          <span className="inline-block px-2 py-1 border border-green-900/40 rounded bg-black/30">
-            TA2EDH © {new Date().getFullYear()} | 73's
-          </span>
+          <div className="flex items-center justify-center gap-2">
+            <span className="inline-block px-2 py-1 border border-green-900/40 rounded bg-black/30">
+              TA2EDH © {new Date().getFullYear()} | 73's
+            </span>
+            <span className="text-green-500/40">•</span>
+            <a
+              href="https://github.com/ta2edh/website"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block px-2 py-1 border border-green-900/40 rounded bg-black/30 hover:text-green-400 hover:border-green-800 transition-colors"
+            >
+              <FontAwesomeIcon icon={faCodeBranch} className="w-3 h-3 mr-1" />
+              Open Source
+            </a>
+          </div>
         </div>
       </footer>
 
