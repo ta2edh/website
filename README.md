@@ -73,8 +73,9 @@ ta2edh.com/
 
 This website is configured for easy deployment on Vercel:
 
-1. Push your code to GitHub
-2. Import your repository on Vercel
+1. Fork [ta2edh/website](https://github.com/ta2edh/website/) repository.
+2. Update all links, name, and the site description in the code to reflect your own information.
+2. Import your forked repository into [Vercel](https://vercel.com/).
 3. Deploy!
 
 ## License
