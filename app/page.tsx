@@ -22,9 +22,9 @@ export default function Home() {
       {/* Radio-style header */}
       <header className="bg-[#050a0f] border-b border-green-900/40 py-2 md:py-3 px-3 md:px-4">
         <div className="container mx-auto flex justify-between items-center">
-          <div className="flex items-center gap-2">
-            <FontAwesomeIcon icon={faBroadcastTower} className="h-5 w-5 md:h-6 md:w-6 text-green-500" />
-            <h1 className="text-2xl font-bold">TA2EDH</h1>
+          <div className="flex items-center gap-1">
+            <FontAwesomeIcon icon={faBroadcastTower} className="h-4 w-4 text-green-500" />
+            <h1 className="text-lg font-bold">TA2EDH</h1>
           </div>
         </div>
       </header>
@@ -108,7 +108,7 @@ export default function Home() {
               rel="noopener noreferrer"
               className="inline-block px-2 py-1 border border-green-900/40 rounded bg-black/30 hover:text-green-400 hover:border-green-800 transition-colors"
             >
-              <FontAwesomeIcon icon={faCodeBranch} className="w-4 h-4 md:w-5 md:h-5 mr-1" />
+              <FontAwesomeIcon icon={faCodeBranch} className="w-3 h-3 mr-1 align-middle" />
               Open Source
             </a>
           </div>
