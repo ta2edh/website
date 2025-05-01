@@ -6,8 +6,6 @@ import { Button } from "@/components/ui/button"
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog"
 import ContactForm from "@/components/contact-form"
 import SocialLinks from "@/components/social-links"
-import FrequencyDisplay from "@/components/frequency-display"
-import SignalMeter from "@/components/signal-meter"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { 
   faWalkieTalkie,
@@ -16,21 +14,8 @@ import {
   faEnvelope
  } from '@fortawesome/free-solid-svg-icons'
 
-
 export default function Home() {
   const [isContactOpen, setIsContactOpen] = useState(false)
-  const [frequency, setFrequency] = useState("430.025")
-
-  // Simulate changing frequencies
-  useEffect(() => {
-    const interval = setInterval(() => {
-      const freqs = ["430.025", "430.350", "430.875", "431.125", "431.500", "432.025", "432.450", "432.975", "433.600", "434.125", "434.775", "435.000", "435.625", "436.050", "436.475", "437.000", "437.425", "438.050", "438.875", "439.725"];
-
-      setFrequency(freqs[Math.floor(Math.random() * freqs.length)])
-    }, 5000)
-
-    return () => clearInterval(interval)
-  }, [])
 
   return (
     <div className="min-h-screen bg-[#0a1219] text-green-400 flex flex-col">
@@ -41,21 +26,12 @@ export default function Home() {
             <Radio className="h-4 w-4 md:h-5 md:w-5 text-green-500" />
             <span className="font-mono text-base md:text-lg font-bold tracking-wider">TA2EDH</span>
           </div>
-          <div className="flex items-center gap-2 md:gap-3">
-            <SignalMeter />
-            <span className="font-mono text-[10px] md:text-xs border border-green-800 bg-black/50 px-1.5 md:px-2 py-0.5 md:py-1 rounded">ON AIR</span>
-          </div>
         </div>
       </header>
 
       {/* Main Content */}
       <main className="flex-1 container mx-auto px-4 py-4 md:py-8 flex flex-col justify-center sm:px-6 lg:px-8 w-full">
         <div className="max-w-7xl mx-auto w-full">
-          {/* Radio display panel 
-          <div className="bg-[#050a0f] border border-green-900/60 rounded-lg p-4 mb-6 shadow-lg shadow-green-900/10">
-            <FrequencyDisplay frequency={frequency} />
-          </div>*/}
-
           <div className="grid gap-4 md:gap-6 md:grid-cols-2 w-full">
             {/* Left Column - Intro */}
             <div className="bg-[#050a0f] border border-green-900/60 rounded-lg p-4 md:p-6 space-y-4 md:space-y-5 shadow-lg shadow-green-900/10 w-full">
@@ -149,7 +125,6 @@ export default function Home() {
               className="absolute right-4 top-4 text-green-500 hover:text-green-400 hover:bg-green-900/30"
               onClick={() => setIsContactOpen(false)}
             >
-              {/*<X className="h-4 w-4" />*/}
               <span className="sr-only">Close</span>
             </Button>
           </DialogHeader>
