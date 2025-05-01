@@ -69,9 +69,9 @@ export default function Home() {
                   <span className="text-white">ERDEM HACISALIHOGLU</span><span className="text-gray-500 ml-2">|</span><span className="text-green-500 ml-2">TA2EDH</span>
                 </h1>
                 <div className="flex flex-wrap items-center gap-2 mb-3 md:mb-4">
-                  <FontAwesomeIcon icon={faWalkieTalkie} />
+                  <FontAwesomeIcon icon={faWalkieTalkie} className="w-4 h-4" />
                   <p className="text-xs md:text-sm text-green-300 font-mono">Radio Amateur</p>
-                  <FontAwesomeIcon icon={faCode} />
+                  <FontAwesomeIcon icon={faCode} className="w-4 h-4" />
                   <p className="text-xs md:text-sm text-green-300 font-mono">Software Developer</p>
                 </div>
                 <p className="text-sm md:text-base text-white/80 border-l-2 border-green-500 pl-3 py-1">
@@ -85,10 +85,10 @@ export default function Home() {
                   onClick={() => setIsContactOpen(true)}
                   className="bg-green-700 hover:bg-green-600 text-white font-mono text-sm md:text-base"
                 >
-                  <FontAwesomeIcon icon={faEnvelope} /> QSO REQUEST
+                  <FontAwesomeIcon icon={faEnvelope} className="w-4 h-4" /> QSO REQUEST
                 </Button>
                 <Button onClick={() => window.location.href="https://github.com/ta2edh"}variant="outline" className="border-green-800 hover:bg-green-900/50 text-green-400 font-mono text-sm md:text-base">
-                <FontAwesomeIcon icon={faCodeBranch} /> PROJECTS
+                  <FontAwesomeIcon icon={faCodeBranch} className="w-4 h-4" /> PROJECTS
                 </Button>
               </div>
 
