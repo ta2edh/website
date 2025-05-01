@@ -2,7 +2,7 @@
 
 A modern, responsive personal website built with Next.js, React, and Tailwind CSS.
 
-![Website Screenshot](https://i.imgur.com/CqgKmYL.png)
+![website](https://github.com/user-attachments/assets/3f20738d-1e37-4190-9986-1ad1b594144d)
 
 ## Features
 
