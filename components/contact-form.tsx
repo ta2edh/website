@@ -7,7 +7,8 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { useToast } from "@/hooks/use-toast"
-import { Radio } from "lucide-react"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faBroadcastTower } from "@fortawesome/free-solid-svg-icons"
 
 interface ContactFormProps {
   onSuccess?: () => void
@@ -66,7 +67,7 @@ export default function ContactForm({ onSuccess }: ContactFormProps) {
     <form onSubmit={handleSubmit} className="space-y-4 mt-2 font-mono">
       <div className="space-y-2">
         <div className="flex items-center gap-2 text-xs text-green-500 mb-1">
-          <Radio className="h-3 w-3" />
+          <FontAwesomeIcon icon={faBroadcastTower} className="h-3 w-3" />
           <span>YOUR CALLSIGN/NAME</span>
         </div>
         <Input
@@ -82,7 +83,7 @@ export default function ContactForm({ onSuccess }: ContactFormProps) {
       </div>
       <div className="space-y-2">
         <div className="flex items-center gap-2 text-xs text-green-500 mb-1">
-          <Radio className="h-3 w-3" />
+          <FontAwesomeIcon icon={faBroadcastTower} className="h-3 w-3" />
           <span>EMAIL QTH</span>
         </div>
         <Input
@@ -98,7 +99,7 @@ export default function ContactForm({ onSuccess }: ContactFormProps) {
       </div>
       <div className="space-y-2">
         <div className="flex items-center gap-2 text-xs text-green-500 mb-1">
-          <Radio className="h-3 w-3" />
+          <FontAwesomeIcon icon={faBroadcastTower} className="h-3 w-3" />
           <span>MESSAGE</span>
         </div>
         <Textarea

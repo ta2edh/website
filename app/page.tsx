@@ -1,12 +1,12 @@
 "use client"
 
 import { useState, useEffect } from "react"
-import { X, Radio, Wifi, Headphones } from "lucide-react"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faXmark, faBroadcastTower, faWifi, faHeadphones } from "@fortawesome/free-solid-svg-icons"
 import { Button } from "@/components/ui/button"
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog"
 import ContactForm from "@/components/contact-form"
 import SocialLinks from "@/components/social-links"
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { 
   faWalkieTalkie,
   faCode,
@@ -23,8 +23,8 @@ export default function Home() {
       <header className="bg-[#050a0f] border-b border-green-900/40 py-2 md:py-3 px-3 md:px-4">
         <div className="container mx-auto flex justify-between items-center">
           <div className="flex items-center gap-2">
-            <Radio className="h-4 w-4 md:h-5 md:w-5 text-green-500" />
-            <span className="font-mono text-base md:text-lg font-bold tracking-wider">TA2EDH</span>
+            <FontAwesomeIcon icon={faBroadcastTower} className="h-5 w-5 md:h-6 md:w-6 text-green-500" />
+            <h1 className="text-2xl font-bold">TA2EDH</h1>
           </div>
         </div>
       </header>
@@ -45,9 +45,9 @@ export default function Home() {
                   <span className="text-white">ERDEM HACISALIHOGLU</span><span className="text-gray-500 ml-2">|</span><span className="text-green-500 ml-2">TA2EDH</span>
                 </h1>
                 <div className="flex flex-wrap items-center gap-2 mb-3 md:mb-4">
-                  <FontAwesomeIcon icon={faWalkieTalkie} className="w-4 h-4" />
+                  <FontAwesomeIcon icon={faWalkieTalkie} className="w-5 h-5 md:w-6 md:h-6" />
                   <p className="text-xs md:text-sm text-green-300 font-mono">Radio Amateur</p>
-                  <FontAwesomeIcon icon={faCode} className="w-4 h-4" />
+                  <FontAwesomeIcon icon={faCode} className="w-5 h-5 md:w-6 md:h-6" />
                   <p className="text-xs md:text-sm text-green-300 font-mono">Software Developer</p>
                 </div>
                 <p className="text-sm md:text-base text-white/80 border-l-2 border-green-500 pl-3 py-1">
@@ -61,10 +61,14 @@ export default function Home() {
                   onClick={() => setIsContactOpen(true)}
                   className="bg-green-700 hover:bg-green-600 text-white font-mono text-sm md:text-base"
                 >
-                  <FontAwesomeIcon icon={faEnvelope} className="w-4 h-4" /> QSO REQUEST
+                  <FontAwesomeIcon icon={faEnvelope} className="w-5 h-5 md:w-6 md:h-6" /> QSO REQUEST
                 </Button>
-                <Button onClick={() => window.location.href="https://github.com/ta2edh"}variant="outline" className="border-green-800 hover:bg-green-900/50 text-green-400 font-mono text-sm md:text-base">
-                  <FontAwesomeIcon icon={faCodeBranch} className="w-4 h-4" /> PROJECTS
+                <Button 
+                  onClick={() => window.location.href="https://github.com/ta2edh"}
+                  variant="outline" 
+                  className="bg-black border-green-800 hover:bg-green-900/50 text-green-400 font-mono text-sm md:text-base"
+                >
+                  <FontAwesomeIcon icon={faCodeBranch} className="w-5 h-5 md:w-6 md:h-6" /> PROJECTS
                 </Button>
               </div>
 
@@ -104,7 +108,7 @@ export default function Home() {
               rel="noopener noreferrer"
               className="inline-block px-2 py-1 border border-green-900/40 rounded bg-black/30 hover:text-green-400 hover:border-green-800 transition-colors"
             >
-              <FontAwesomeIcon icon={faCodeBranch} className="w-3 h-3 mr-1" />
+              <FontAwesomeIcon icon={faCodeBranch} className="w-4 h-4 md:w-5 md:h-5 mr-1" />
               Open Source
             </a>
           </div>
@@ -116,7 +120,7 @@ export default function Home() {
         <DialogContent className="sm:max-w-[425px] bg-[#050a0f] border-green-900/60 text-green-400">
           <DialogHeader>
             <DialogTitle className="text-xl font-mono font-semibold flex items-center">
-              <Radio className="mr-2 h-5 w-5 text-green-500" />
+              <FontAwesomeIcon icon={faBroadcastTower} className="mr-2 h-6 w-6 text-green-500" />
               QSO REQUEST
             </DialogTitle>
             <Button
