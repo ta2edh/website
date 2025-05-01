@@ -44,17 +44,17 @@ export default function SocialLinks() {
   ]
 
   return (
-    <div className="grid grid-cols-3 sm:grid-cols-4 gap-2">
+    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-2">
       {socialLinks.map((link) => (
         <Link
           key={link.name}
           href={link.url}
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center gap-2 p-2 bg-black/30 border border-green-900/40 rounded-md hover:bg-green-900/20 transition-colors text-sm font-mono"
+          className="flex items-center gap-2 p-2 bg-black/30 border border-green-900/40 rounded-md hover:bg-green-900/20 transition-colors text-xs sm:text-sm font-mono"
         >
           {link.icon}
-          <span className="capitalize">{link.name}</span>
+          <span className="capitalize truncate">{link.name}</span>
         </Link>
       ))}
     </div>
