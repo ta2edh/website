@@ -17,7 +17,8 @@ import {
  } from '@fortawesome/free-brands-svg-icons'
  import { 
   faGlobe,
-  faTowerCell
+  faTowerCell,
+  faBlog
  } from '@fortawesome/free-solid-svg-icons'
 
 const MatrixIcon = () => (
@@ -60,6 +61,7 @@ const KeyoxideIcon = () => (
 
 export default function SocialLinks() {
   const socialLinks = [
+    { name: "blog", icon: <FontAwesomeIcon icon={faBlog} className="w-4 h-4" />, url: "https://blog.ta2edh.com" },
     { name: "github", icon: <FontAwesomeIcon icon={faGithub} className="w-4 h-4" />, url: "https://github.com/ta2edh" },
     { name: "linkedin", icon: <FontAwesomeIcon icon={faLinkedin} className="w-4 h-4" />, url: "https://www.linkedin.com/in/erdemhacisalihoglu/" },
     { name: "twitter", icon: <FontAwesomeIcon icon={faTwitter} className="w-4 h-4" />, url: "https://x.com/ta2edh" },
