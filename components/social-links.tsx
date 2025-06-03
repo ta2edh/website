@@ -13,7 +13,8 @@ import {
   faSteam,
   faMastodon,
   faHackerNews,
-  faKeybase
+  faKeybase,
+  faWeixin
  } from '@fortawesome/free-brands-svg-icons'
  import { 
   faGlobe,
@@ -49,36 +50,28 @@ const LemmyIcon = () => (
   </svg>
 )
 
-const KeyoxideIcon = () => (
-  <svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
-    <path d="m14.662 2.7734c-0.86914 8.5e-6 -1.5742 0.70509-1.5742 1.5742 0 0.52528 0.26095 1.006 0.67773 1.2949 0.12007 0.083138 0.18912 0.092562 0.20508 0.22266 0.01604 0.13001-0.16211 0.25-0.16211 0.25l-3.3242 2.5859v-0.5293c0.14724-1.4561-0.83223-2.9405-2.2754-3.2793-1.719-0.502-3.7931 1.0298-3.7931 2.6452 0 1.9182 0.00778 8.9247 0.00211 13.429-0.00211 1.6772 1.3577 3.0332 3.0332 3.0332s3.0352-1.3576 3.0352-3.0332v-0.39648c1.365 0.90898 2.7303 1.8174 4.0938 2.7285 1.1299 0.93021 2.9078 0.93859 3.9902-0.07422 1.3712-1.1518 1.323-3.4999-0.0918-4.5957-1.935-1.3219-3.8897-2.6181-5.8418-3.916l5.7734-4.4883c1.1632-0.90466 1.4954-2.5005 0.83398-3.7832-0.04938-0.095755-0.06511-0.12998-0.16797-0.16992-0.10277-0.039938-0.18425 0.00439-0.28711 0.042969-0.14138 0.053062-0.29257 0.080078-0.44531 0.080078-0.69894 0-1.2656-0.56662-1.2656-1.2656 9.4e-5 -0.094853 0.01636-0.14996-0.01172-0.20898-0.02807-0.059023-0.10233-0.097092-0.17578-0.10547-0.12191-0.013926-0.24437-0.020476-0.36719-0.019531-0.12049 8.587e-4 -0.21169-0.00952-0.26367-0.097656-0.05189-0.088142-0.02344-0.18975-0.02344-0.34961 0-0.86915-0.70504-1.5742-1.5742-1.5742z"/>
-    <path d="m12.806 3.085a1.0735 1.0735 0 0 1-1.0735 1.0735 1.0735 1.0735 0 0 1-1.0735-1.0735 1.0735 1.0735 0 0 1 1.0735-1.0735 1.0735 1.0735 0 0 1 1.0735 1.0735z"/>
-    <path d="m13.458 1.0033a0.70038 0.70038 0 0 1-0.70038 0.70038 0.70038 0.70038 0 0 1-0.70038-0.70038 0.70038 0.70038 0 0 1 0.70038-0.70038 0.70038 0.70038 0 0 1 0.70038 0.70038z"/>
-    <path d="m11.339 0.48902a0.48902 0.48902 0 0 1-0.48902 0.48902 0.48902 0.48902 0 0 1-0.48902-0.48902 0.48902 0.48902 0 0 1 0.48902-0.48902 0.48902 0.48902 0 0 1 0.48902 0.48902z"/>
-    <path d="m19.203 5.1296a0.85797 0.85797 0 0 1-0.85797 0.85797 0.85797 0.85797 0 0 1-0.85797-0.85797 0.85797 0.85797 0 0 1 0.85797-0.85797 0.85797 0.85797 0 0 1 0.85797 0.85797z"/>
-  </svg>
-)
-
 export default function SocialLinks() {
   const socialLinks = [
-    { name: "blog", icon: <FontAwesomeIcon icon={faBlog} className="w-4 h-4" />, url: "https://blog.ta2edh.com" },
-    { name: "github", icon: <FontAwesomeIcon icon={faGithub} className="w-4 h-4" />, url: "https://github.com/ta2edh" },
-    { name: "linkedin", icon: <FontAwesomeIcon icon={faLinkedin} className="w-4 h-4" />, url: "https://www.linkedin.com/in/erdemhacisalihoglu/" },
-    { name: "twitter", icon: <FontAwesomeIcon icon={faTwitter} className="w-4 h-4" />, url: "https://x.com/ta2edh" },
-    { name: "instagram", icon: <FontAwesomeIcon icon={faInstagram} className="w-4 h-4" />, url: "http://instagram.com/erdemhglu" },
-    { name: "discord", icon: <FontAwesomeIcon icon={faDiscord} className="w-4 h-4" />, url: "https://discord.com/users/1216321857548980375" },
-    { name: "telegram", icon: <FontAwesomeIcon icon={faTelegram} className="w-4 h-4" />, url: "https://t.me/ta2edh" },
-    { name: "signal", icon: <FontAwesomeIcon icon={faSignalMessenger} className="w-4 h-4" />, url: "https://signal.me/#eu/hKRNDYlWdknbk948hkD8QHtFe1IsveuJFv4GVNqH-HYe6Okb3PRAGI5RP8v-8iQu" },
-    { name: "matrix", icon: <MatrixIcon />, url: "https://matrix.to/#/@ehaci:matrix.org" },
-    { name: "lastfm", icon: <FontAwesomeIcon icon={faLastfm} className="w-4 h-4" />, url: "https://www.last.fm/user/ta2edh" },
-    { name: "steam", icon: <FontAwesomeIcon icon={faSteam} className="w-4 h-4" />, url: "https://steamcommunity.com/id/ta2edh/" },
-    { name: "QRZ", icon: <FontAwesomeIcon icon={faTowerCell} className="w-4 h-4" />, url: "https://www.qrz.com/db/W6/TA2EDH" },
     { name: "bluesky", icon: <FontAwesomeIcon icon={faBluesky} className="w-4 h-4" />, url: "https://bsky.app/profile/ta2edh.com" },
-    { name: "mastodon", icon: <FontAwesomeIcon icon={faMastodon} className="w-4 h-4" />, url: "https://mastodon.social/@ta2edh" },
+    { name: "blog", icon: <FontAwesomeIcon icon={faBlog} className="w-4 h-4" />, url: "https://blog.ta2edh.com" },
+    { name: "discord", icon: <FontAwesomeIcon icon={faDiscord} className="w-4 h-4" />, url: "https://discord.com/users/1216321857548980375" },
+    { name: "github", icon: <FontAwesomeIcon icon={faGithub} className="w-4 h-4" />, url: "https://github.com/ta2edh" },
     { name: "hackernews", icon: <FontAwesomeIcon icon={faHackerNews} className="w-4 h-4" />, url: "https://news.ycombinator.com/user?id=ta2edh" },
+    { name: "instagram", icon: <FontAwesomeIcon icon={faInstagram} className="w-4 h-4" />, url: "http://instagram.com/erdemhglu" },
     { name: "keybase", icon: <FontAwesomeIcon icon={faKeybase} className="w-4 h-4" />, url: "https://keybase.io/ta2edh" },
-    { name: "keyoxide", icon: <KeyoxideIcon />, url: "https://keyoxide.org/openpgp4fpr:9BF5329BBB0BB05DD8DB85EEDB8A39DA5378527B" },
+    { name: "lastfm", icon: <FontAwesomeIcon icon={faLastfm} className="w-4 h-4" />, url: "https://www.last.fm/user/ta2edh" },
     { name: "lemmy", icon: <LemmyIcon />, url: "https://lemmy.world/u/ta2edh" },
+    { name: "linkedin", icon: <FontAwesomeIcon icon={faLinkedin} className="w-4 h-4" />, url: "https://www.linkedin.com/in/erdemhacisalihoglu/" },
+    { name: "mastodon", icon: <FontAwesomeIcon icon={faMastodon} className="w-4 h-4" />, url: "https://mastodon.social/@ta2edh" },
+    { name: "matrix", icon: <MatrixIcon />, url: "https://matrix.to/#/@ta2edh:matrix.org" },
+    { name: "QRZ", icon: <FontAwesomeIcon icon={faTowerCell} className="w-4 h-4" />, url: "https://www.qrz.com/db/W6/TA2EDH" },
+    { name: "signal", icon: <FontAwesomeIcon icon={faSignalMessenger} className="w-4 h-4" />, url: "https://signal.me/#eu/hKRNDYlWdknbk948hkD8QHtFe1IsveuJFv4GVNqH-HYe6Okb3PRAGI5RP8v-8iQu" },
+    { name: "steam", icon: <FontAwesomeIcon icon={faSteam} className="w-4 h-4" />, url: "https://steamcommunity.com/id/ta2edh/" },
+    { name: "telegram", icon: <FontAwesomeIcon icon={faTelegram} className="w-4 h-4" />, url: "https://t.me/ta2edh" },
+    { name: "twitter", icon: <FontAwesomeIcon icon={faTwitter} className="w-4 h-4" />, url: "https://x.com/ta2edh" },
+    { name: "wechat", icon: <FontAwesomeIcon icon={faWeixin} className="w-4 h-4" />, url: "https://u.wechat.com/kIH4NveDHohDupxa5Vl0B3M?s=2" }
+
+    
   ]
 
   return (
