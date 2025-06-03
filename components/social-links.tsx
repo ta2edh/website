@@ -14,10 +14,11 @@ import {
   faMastodon,
   faHackerNews,
   faKeybase,
-  faWeixin
+  faWeixin,
+  faMedium,
+  faYoutube
  } from '@fortawesome/free-brands-svg-icons'
  import { 
-  faGlobe,
   faTowerCell,
   faBlog
  } from '@fortawesome/free-solid-svg-icons'
@@ -64,12 +65,15 @@ export default function SocialLinks() {
     { name: "linkedin", icon: <FontAwesomeIcon icon={faLinkedin} className="w-4 h-4" />, url: "https://www.linkedin.com/in/erdemhacisalihoglu/" },
     { name: "mastodon", icon: <FontAwesomeIcon icon={faMastodon} className="w-4 h-4" />, url: "https://mastodon.social/@ta2edh" },
     { name: "matrix", icon: <MatrixIcon />, url: "https://matrix.to/#/@ta2edh:matrix.org" },
+    { name: "medium", icon: <FontAwesomeIcon icon={faMedium} className="w-4 h-4" />, url: "https://medium.com/@ta2edh" },
     { name: "QRZ", icon: <FontAwesomeIcon icon={faTowerCell} className="w-4 h-4" />, url: "https://www.qrz.com/db/W6/TA2EDH" },
     { name: "signal", icon: <FontAwesomeIcon icon={faSignalMessenger} className="w-4 h-4" />, url: "https://signal.me/#eu/hKRNDYlWdknbk948hkD8QHtFe1IsveuJFv4GVNqH-HYe6Okb3PRAGI5RP8v-8iQu" },
     { name: "steam", icon: <FontAwesomeIcon icon={faSteam} className="w-4 h-4" />, url: "https://steamcommunity.com/id/ta2edh/" },
     { name: "telegram", icon: <FontAwesomeIcon icon={faTelegram} className="w-4 h-4" />, url: "https://t.me/ta2edh" },
     { name: "twitter", icon: <FontAwesomeIcon icon={faTwitter} className="w-4 h-4" />, url: "https://x.com/ta2edh" },
-    { name: "wechat", icon: <FontAwesomeIcon icon={faWeixin} className="w-4 h-4" />, url: "https://u.wechat.com/kIH4NveDHohDupxa5Vl0B3M?s=2" }
+    { name: "wechat", icon: <FontAwesomeIcon icon={faWeixin} className="w-4 h-4" />, url: "https://u.wechat.com/kIH4NveDHohDupxa5Vl0B3M?s=2" },
+    { name: "youtube", icon: <FontAwesomeIcon icon={faYoutube} className="w-4 h-4" />, url: "https://youtube.com/@ta2edh" },
+
 
     
   ]
