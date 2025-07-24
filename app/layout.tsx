@@ -18,6 +18,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        <link rel="me" href="https://sosyal.teknofest.app/@erdemhacisalihoglu" />
+        <link rel="me" href="https://mastodon.social/@ta2edh" />
+      </head>
       <body className={mono.className}>
         {children}
         <Toaster />
